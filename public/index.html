@@ -1,37 +1,954 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyTelegram</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body class="app">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <aside class="aside">
+    <div class="header">
+      <!-- <div class="material-icons icons">menu</div> -->
+      <div class="material-icons icons">arrow_back</div>
+      <input type="searh" class="aside__search" placeholder="Search">
+    </div>
+    <ul class="tabs">
+      <li class="tab">Chats</li>
+      <li class="tab">Media</li>
+      <li class="tab">Links</li>
+      <li class="tab">Files</li>
+      <li class="tab">Music</li>
+      <li class="tab">Voice</li>
+    </ul>
+    <div class="tab-view">
+
+      <ul class="select-chats">
+        <il class="chat-item">
+          <img src="./b.png" alt="Фото профиля" class="circle chat-item-photo" width="40px" height="40px">
+          <h1 class="name">Кирилл</h1>
+        </il>
+        <il class="chat-item">
+          <img src="./b.png" alt="Фото профиля" class="circle" width="40px" height="40px">
+          <h1 class="name">Кирилл</h1>
+        </il>
+        <il class="chat-item">
+          <img src="./b.png" alt="Фото профиля" class="circle" width="40px" height="40px">
+          <h1 class="name">Кирилл</h1>
+        </il>
+        <il class="chat-item">
+          <img src="./b.png" alt="Фото профиля" class="circle" width="40px" height="40px">
+          <h1 class="name">Кирилл</h1>
+        </il>
+        <il class="chat-item">
+          <img src="./b.png" alt="Фото профиля" class="circle" width="40px" height="40px">
+          <h1 class="name">Кирилл</h1>
+        </il>
+
+      </ul>
+      <ul class="select-media">
+        <li class="month">
+          <h1 class="name">Februrary</h1>
+          <div class="media-month">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+          </div>
+        </li>
+        <li class="month">
+          <h1 class="name">Februrary</h1>
+          <div class="media-month">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+          </div>
+        </li>
+        <li class="month">
+          <h1 class="name">Februrary</h1>
+          <div class="media-month">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+            <img src="./b.png" alt="Фото документа" class="photo-files" width="127.66px" height="127.66px">
+          </div>
+        </li>
+      </ul>
+      <ul class="select-files">
+        <li class="month">
+          <h1 class="name">Februrary</h1>
+          <ul>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">104 MB</div>
+                  <h1 class="card__sender">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">104 MB</div>
+                  <h1 class="card__sender">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">104 MB</div>
+                  <h1 class="card__sender">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="month">
+          <h1 class="name">Februrary</h1>
+          <ul>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">104 MB</div>
+                  <h1 class="card__sender">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">104 MB</div>
+                  <h1 class="card__sender">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">104 MB</div>
+                  <h1 class="card__sender">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="month">
+          <h1 class="name">April</h1>
+          <ul>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">104 MB</div>
+                  <h1 class="card__sender">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">104 MB</div>
+                  <h1 class="card__sender">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">104 MB</div>
+                  <h1 class="card__sender">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">104 MB</div>
+                  <h1 class="card__sender">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">104 MB</div>
+                  <h1 class="card__sender">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="select-links">
+        <li class="month">
+          <h1 class="name">Februrary</h1>
+          <ul>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle-link">
+                  <div class="card__message">Длинный огромный текст с описанием содержания ссылки на насколько
+                    строк.Длинный огромный текст с описанием содержания ссылки на насколько строк.</div>
+                  <a href="https://translate.yandex.ru/" class="card_link">https://translate.yandex.ru/</a>
+                  <h1 class="card__message">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle-link">
+                  <div class="card__message">Длинный огромный текст с описанием содержания ссылки на насколько
+                    строк.Длинный огромный текст с описанием содержания ссылки на насколько строк.</div>
+                  <a href="https://translate.yandex.ru/" class="card_link">https://translate.yandex.ru/</a>
+                  <h1 class="card__message">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle-link">
+                  <div class="card__message">Длинный огромный текст с описанием содержания ссылки на насколько
+                    строк.Длинный огромный текст с описанием содержания ссылки на насколько строк.</div>
+                  <a href="https://translate.yandex.ru/" class="card_link">https://translate.yandex.ru/</a>
+                  <h1 class="card__message">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="month">
+          <h1 class="name">Februrary</h1>
+          <ul>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle-link">
+                  <div class="card__message">Длинный огромный текст с описанием содержания ссылки на насколько
+                    строк.Длинный огромный текст с описанием содержания ссылки на насколько строк.</div>
+                  <a href="https://translate.yandex.ru/" class="card_link">https://translate.yandex.ru/</a>
+                  <h1 class="card__message">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle-link">
+                  <div class="card__message">Длинный огромный текст с описанием содержания ссылки на насколько
+                    строк.Длинный огромный текст с описанием содержания ссылки на насколько строк.</div>
+                  <a href="https://translate.yandex.ru/" class="card_link">https://translate.yandex.ru/</a>
+                  <h1 class="card__message">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle-link">
+                  <div class="card__message">Длинный огромный текст с описанием содержания ссылки на насколько
+                    строк.Длинный огромный текст с описанием содержания ссылки на насколько строк.</div>
+                  <a href="https://translate.yandex.ru/" class="card_link">https://translate.yandex.ru/</a>
+                  <h1 class="card__message">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="month">
+          <h1 class="name">Februrary</h1>
+          <ul>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle-link">
+                  <div class="card__message">Длинный огромный текст с описанием содержания ссылки на насколько
+                    строк.Длинный огромный текст с описанием содержания ссылки на насколько строк.</div>
+                  <a href="https://translate.yandex.ru/" class="card_link">https://translate.yandex.ru/</a>
+                  <h1 class="card__message">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle-link">
+                  <div class="card__message">Длинный огромный текст с описанием содержания ссылки на насколько
+                    строк.Длинный огромный текст с описанием содержания ссылки на насколько строк.</div>
+                  <a href="https://translate.yandex.ru/" class="card_link">https://translate.yandex.ru/</a>
+                  <h1 class="card__message">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle-link">
+                  <div class="card__message">Длинный огромный текст с описанием содержания ссылки на насколько
+                    строк.Длинный огромный текст с описанием содержания ссылки на насколько строк.</div>
+                  <a href="https://translate.yandex.ru/" class="card_link">https://translate.yandex.ru/</a>
+                  <h1 class="card__message">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="month">
+          <h1 class="name">Februrary</h1>
+          <ul>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle-link">
+                  <div class="card__message">Длинный огромный текст с описанием содержания ссылки на насколько
+                    строк.Длинный огромный текст с описанием содержания ссылки на насколько строк.</div>
+                  <a href="https://translate.yandex.ru/" class="card_link">https://translate.yandex.ru/</a>
+                  <h1 class="card__message">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle-link">
+                  <div class="card__message">Длинный огромный текст с описанием содержания ссылки на насколько
+                    строк.Длинный огромный текст с описанием содержания ссылки на насколько строк.</div>
+                  <a href="https://translate.yandex.ru/" class="card_link">https://translate.yandex.ru/</a>
+                  <h1 class="card__message">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./b.png" alt="Фото документа" class="photo-files" width="40px" height="40px">
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle-link">
+                  <div class="card__message">Длинный огромный текст с описанием содержания ссылки на насколько
+                    строк.Длинный огромный текст с описанием содержания ссылки на насколько строк.</div>
+                  <a href="https://translate.yandex.ru/" class="card_link">https://translate.yandex.ru/</a>
+                  <h1 class="card__message">Иванов Иван</h1>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="select-voice">
+        <li class="month">
+          <h1 class="name">Februrary</h1>
+          <ul>
+            <li class="card">
+              <div class="material-icons card__icons-play">play_circle_filled</div>
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">0:30</div>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="material-icons card__icons-play">play_circle_filled</div>
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">0:30</div>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="material-icons card__icons-play">play_circle_filled</div>
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">0:30</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="month">
+          <h1 class="name">Februrary</h1>
+          <ul>
+            <li class="card">
+              <div class="material-icons card__icons-play">play_circle_filled</div>
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">0:30</div>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="material-icons card__icons-play">play_circle_filled</div>
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">0:30</div>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="material-icons card__icons-play">play_circle_filled</div>
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">0:30</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="month">
+          <h1 class="name">Februrary</h1>
+          <ul>
+            <li class="card">
+              <div class="material-icons card__icons-play">play_circle_filled</div>
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">0:30</div>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="material-icons card__icons-play">play_circle_filled</div>
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">0:30</div>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="material-icons card__icons-play">play_circle_filled</div>
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">0:30</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="month">
+          <h1 class="name">Februrary</h1>
+          <ul>
+            <li class="card">
+              <div class="material-icons card__icons-play">play_circle_filled</div>
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">0:30</div>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="material-icons card__icons-play">play_circle_filled</div>
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">0:30</div>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="material-icons card__icons-play">play_circle_filled</div>
+              <div class="card__info">
+                <div class="card__title">
+                  <h1 class="card__name">Философия физики</h1>
+                  <h3 class="card__data">22:13</h3>
+                </div>
+                <div class="card__subtitle">
+                  <div class="card__message">0:30</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+
+
+
+    <div class="chatlist">
+      <div class="card">
+        <img src="./b.png" alt="Фото профиля" class="circle" width="60px" height="60px">
+        <div class="card__info">
+          <div class="card__title">
+            <h1 class="card__name">Иванов Кирилл</h1>
+            <h3 class="card__data">22:13</h3>
+          </div>
+          <div class="card__subtitle">
+            <div class="card__message">Добро пожаловать в телеграм</div>
+            <div class="card__count-msg">51</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./b.png" alt="Фото профиля" class="circle" width="60px" height="60px">
+        <div class="card__info">
+          <div class="card__title">
+            <h1 class="card__name">Иванов Кирилл</h1>
+            <h3 class="card__data">22:13</h3>
+          </div>
+          <div class="card__subtitle">
+            <div class="card__message">Добро пожаловать в телеграм</div>
+            <div class="card__count-msg">51</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./b.png" alt="Фото профиля" class="circle" width="60px" height="60px">
+        <div class="card__info">
+          <div class="card__title">
+            <h1 class="card__name">Иванов Кирилл</h1>
+            <h3 class="card__data">22:13</h3>
+          </div>
+          <div class="card__subtitle">
+            <div class="card__message">Добро пожаловать в телеграм</div>
+            <div class="card__count-msg">51</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./b.png" alt="Фото профиля" class="circle" width="60px" height="60px">
+        <div class="card__info">
+          <div class="card__title">
+            <h1 class="card__name">Иванов Кирилл</h1>
+            <h3 class="card__data">22:13</h3>
+          </div>
+          <div class="card__subtitle">
+            <div class="card__message">Добро пожаловать в телеграм</div>
+            <div class="card__count-msg">51</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./b.png" alt="Фото профиля" class="circle" width="60px" height="60px">
+        <div class="card__info">
+          <div class="card__title">
+            <h1 class="card__name">Иванов Кирилл</h1>
+            <h3 class="card__data">22:13</h3>
+          </div>
+          <div class="card__subtitle">
+            <div class="card__message">Добро пожаловать в телеграм</div>
+            <div class="card__count-msg">51</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./b.png" alt="Фото профиля" class="circle" width="60px" height="60px">
+        <div class="card__info">
+          <div class="card__title">
+            <h1 class="card__name">Иванов Кирилл</h1>
+            <h3 class="card__data">22:13</h3>
+          </div>
+          <div class="card__subtitle">
+            <div class="card__message">Добро пожаловать в телеграм</div>
+            <div class="card__count-msg">51</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./b.png" alt="Фото профиля" class="circle" width="60px" height="60px">
+        <div class="card__info">
+          <div class="card__title">
+            <h1 class="card__name">Иванов Кирилл</h1>
+            <h3 class="card__data">22:13</h3>
+          </div>
+          <div class="card__subtitle">
+            <div class="card__message">Добро пожаловать в телеграм</div>
+            <div class="card__count-msg">51</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./b.png" alt="Фото профиля" class="circle" width="60px" height="60px">
+        <div class="card__info">
+          <div class="card__title">
+            <h1 class="card__name">Иванов Кирилл</h1>
+            <h3 class="card__data">22:13</h3>
+          </div>
+          <div class="card__subtitle">
+            <div class="card__message">Добро пожаловать в телеграм</div>
+            <div class="card__count-msg">51</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./b.png" alt="Фото профиля" class="circle" width="60px" height="60px">
+        <div class="card__info">
+          <div class="card__title">
+            <h1 class="card__name">Иванов Кирилл</h1>
+            <h3 class="card__data">22:13</h3>
+          </div>
+          <div class="card__subtitle">
+            <div class="card__message">Добро пожаловать в телеграм</div>
+            <div class="card__count-msg">51</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./b.png" alt="Фото профиля" class="circle" width="60px" height="60px">
+        <div class="card__info">
+          <div class="card__title">
+            <h1 class="card__name">Иванов Кирилл</h1>
+            <h3 class="card__data">22:13</h3>
+          </div>
+          <div class="card__subtitle">
+            <div class="card__message">Добро пожаловать в телеграм</div>
+            <div class="card__count-msg">51</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./b.png" alt="Фото профиля" class="circle" width="60px" height="60px">
+        <div class="card__info">
+          <div class="card__title">
+            <h1 class="card__name">Иванов Кирилл</h1>
+            <h3 class="card__data">22:13</h3>
+          </div>
+          <div class="card__subtitle">
+            <div class="card__message">Добро пожаловать в телеграм</div>
+            <div class="card__count-msg">51</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </aside>
+
+  <main class="dialog">
+
+    <div class="dialog-header">
+      <img src="./b.png" alt="Фото профиля" class="circle" width="40px" height="40px">
+      <!-- <div class="dialog-header__info"> -->
+      <div class="card__info">
+        <h1 class="card__name">Иванов Кирилл</h1>
+        <h2 class="card__data">Был в сети сегодня</h2>
+        <!-- </div> -->
+      </div>
+      <div class="material-icons icons-more-vert">more_vert</div>
+    </div>
+    <div class="dialog-box">
+      <div class="messages">
+        <div class="message my-message">
+          <div class="message__title">Forwarded from Иванов Иван</div>
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+            <div class="material-icons icons-check">check</div>
+          </div>
+        </div>
+        <div class="message my-message">
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+            <div class="material-icons icons-check">check</div>
+          </div>
+        </div>
+        <div class="message my-message">
+          <div class="message__title">Forwarded from Иванов Иван</div>
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+            <div class="material-icons icons-check">check</div>
+          </div>
+        </div>
+        <div class="message other-message">
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+          </div>
+        </div>
+        <div class="message my-message">
+          <div class="message__title">Forwarded from Иванов Иван</div>
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+            <div class="material-icons icons-check">check</div>
+          </div>
+        </div>
+        <div class="message my-message">
+          <div class="message__title">Forwarded from Иванов Иван</div>
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+            <div class="material-icons icons-check">check</div>
+          </div>
+        </div>
+        <div class="message other-message">
+          <div class="message__title">Forwarded from Иванов Иван</div>
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+          </div>
+        </div>
+        <div class="message my-message">
+          <div class="message__title">Forwarded from Иванов Иван</div>
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+            <div class="material-icons icons-check">check</div>
+          </div>
+        </div>
+        <div class="message my-message">
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+            <div class="material-icons icons-check">done_all</div>
+          </div>
+        </div>
+        <div class="message my-message">
+          <div class="message__title">Forwarded from Иванов Иван</div>
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+            <div class="material-icons icons-check">done_all</div>
+          </div>
+        </div>
+        <div class="message my-message">
+          <div class="message__title">Forwarded from Иванов Иван</div>
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+            <div class="material-icons icons-check">done_all</div>
+          </div>
+        </div>
+        <div class="message other-message">
+          <div class="message__title">Forwarded from Иванов Иван</div>
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+          </div>
+        </div>
+        <div class="message my-message">
+          <div class="message__title">Forwarded from Иванов Иван</div>
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+            <div class="material-icons icons-check">done_all</div>
+          </div>
+        </div>
+        <div class="message my-message">
+          <div class="message__title">Forwarded from Иванов Иван</div>
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+            <div class="material-icons icons-check">done_all</div>
+          </div>
+        </div>
+        <div class="message other-message">
+          <div class="message__title">Forwarded from Иванов Иван</div>
+          <div class="message__subtitle">First</div>
+          <div class="message__info">
+            <div class="message__time">22:00</div>
+          </div>
+        </div>
+      </div>
+      <div class="sending-panel">
+        <div class="new-message">
+          <div class="material-icons icons-sending-panel">tag_faces</div>
+          <textarea class="send-message" placeholder="Message"></textarea>
+          <div class="material-icons icons-sending-panel">attach_file</div>
+        </div>
+        <!-- <div class="material-icons icons-keyboard-voice">keyboard_voice</div> -->
+        <div class="material-icons icons-send">send</div>
+      </div>
+    </div>
+  </main>
+  <div class="profile">
+    <div class="profile__header">
+      <div class="material-icons icons">highlight_off</div>
+      <h1>Profile</h1>
+      <div class="material-icons icons">mode_edit</div>
+    </div>
+    <div class="profile__content">
+      <img src="./b.png" alt="Фото документа" class="photo-files" width="398px" height="398px">
+      <div class="profile__card">
+        <div class="material-icons card__icons-play">call</div>
+        <div class="card__info">
+          <div class="card__title">
+            <h1 class="card__name">89095556677</h1>
+          </div>
+          <div class="card__subtitle">
+            <div class="card__message">Phone</div>
+          </div>
+        </div>
+      </div>
+      <div class="profile__card">
+        <div class="material-icons card__icons-play">alternate_email</div>
+        <div class="card__info">
+          <div class="card__title">
+            <h1 class="card__name">Ivan_Ivanov</h1>
+          </div>
+          <div class="card__subtitle">
+            <div class="card__message">UserName</div>
+          </div>
+        </div>
+      </div>
+      <div class="profile__card">
+        <div class="material-icons card__icons-play">notifications_none</div>
+        <div class="card__info">
+          <div class="card__title">
+            <h1 class="card__name">Notificactions</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
