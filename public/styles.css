@@ -27,14 +27,19 @@
   overflow: hidden;
   font: "Segoe UI", Tahoma, Geneva;
 }
-.aside {
+.left-column {
   background-color: MistyRose;
   min-width: 400px;
   padding: 5px 5px;
   border: 1px gray solid;
   flex: 0;
 }
-.aside__search {
+@media (max-width: 1000px) {
+  .left-column {
+    display: none;
+  }
+}
+.left-column__search {
   font-size: 18px;
   width: 300px;
   height: 40px;
@@ -45,7 +50,7 @@
     no-repeat scroll 0 50%;
   background-color: Ivory;
 }
-.aside__search:focus {
+.left-column__search:focus {
   outline-color: aqua;
 }
 .dialog {
@@ -60,6 +65,11 @@
   flex: 0 5 400px;
   background-color: Ivory;
 }
+@media (max-width: 1250px) {
+  .profile {
+    display: none;
+  }
+}
 .header {
   display: flex;
   height: 50px;
@@ -67,11 +77,11 @@
   align-items: center;
   padding: 5px 5px;
 }
-.material-icons.icons{
+.material-icons.icons {
   font-size: 35px;
-  color:dimgray;
+  color: dimgray;
 }
-.icons:hover{
+.icons:hover {
   cursor: pointer;
 }
 .dialog-header {
@@ -97,7 +107,7 @@
   overflow-y: auto;
   scroll-snap-type: y;
 }
-.profile__card{
+.profile__card {
   display: flex;
   flex-direction: row;
   padding: 5px 5px;
@@ -110,13 +120,12 @@
   flex-direction: row;
   padding: 5px 5px;
   border-radius: 10px;
-
   border: 1px gray solid;
   margin-bottom: 10px;
   background-color: Ivory;
   cursor: pointer;
 }
-.card:hover{
+.card:hover {
   cursor: pointer;
   background-color: LightGrey;
 }
@@ -135,32 +144,12 @@
   display: flex;
   justify-content: space-between;
 }
-.card__subtitle-link {
-}
 .card__name {
   font-size: 16px;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
-.name {
-  font-size: 16px;
-  color: black;
-  font-weight: normal;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.card__message {
-  font-size: 14px;
-  color: dimgray;
-  font-weight: normal;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.card__sender {
-  font-size: 14px;
-  color: dimgray;
-  font-weight: normal;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.card__data {
+.card__text {
   font-size: 14px;
   color: dimgray;
   font-weight: normal;
@@ -213,16 +202,16 @@
   display: none;
 }
 .select-files {
-  display: none;
+  /* display: none; */
 }
 .select-media {
   display: none;
 }
-.photo-files:hover{
+.photo-files:hover {
   cursor: pointer;
 }
 .select-links {
-  /* display: none; */
+  display: none;
 }
 .media-month {
   display: grid;
@@ -254,12 +243,11 @@
   width: 80%;
   min-width: 40%;
   flex: 2 2 470px;
-
 }
-.my-message{
-align-self: flex-end;
+.my-message {
+  align-self: flex-end;
 }
-.other-message{
+.other-message {
   align-self: flex-start;
 }
 .sending-panel {
@@ -288,19 +276,10 @@ align-self: flex-end;
   margin-right: 5px;
   flex: 1;
   border: none;
-  background-color:Ivory ;
+  background-color: Ivory;
 }
-.send-message:focus{
+.send-message:focus {
   outline: none;
-}
-.icons-tag-faces {
-  font-size: 24px !important;
-}
-.icons-attach-file {
-  font-size: 24px !important;
-}
-.icons-send {
-  font-size: 40px !important;
 }
 .profile__header {
   display: flex;
@@ -310,51 +289,39 @@ align-self: flex-end;
   padding: 5px 5px;
   background-color: MistyRose;
 }
-.message{
+.message {
   display: flex;
   padding: 5px 5px;
   border-radius: 10px;
   border: 1px gray solid;
   margin-bottom: 10px;
   background-color: MistyRose;
-  align-content:stretch;
+  align-content: stretch;
   flex-direction: column;
 }
-.message__title{
+.message__title {
   font-size: 14px;
   color: dimgray;
-  font-weight:bold;
+  font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
-.message__subtitle{
+.message__subtitle {
   font-size: 14px;
   color: black;
-  font-weight:normal;
+  font-weight: normal;
   font-family: Arial, Helvetica, sans-serif;
 }
-.message__time{
-  font-size: 12px;
-  color: dimgray;
-  font-weight:normal;
-  font-family: Arial, Helvetica, sans-serif;
-  
-}
-.material-icons.icons-check{
+.material-icons.icons-check {
   font-size: 12px;
   color: dimgray;
 }
-.message__info{
+.message__info {
   display: flex;
   flex-direction: row;
   align-self: flex-end;
 }
-.material-icons.icons-sending-panel{
+.material-icons.icons-sending-panel {
   font-size: 30px;
   color: dimgray;
   cursor: pointer;
-}
-.material-icons.icons-send{
-  font-size: 30px;
-  color: dimgray;
-cursor: pointer;
 }
