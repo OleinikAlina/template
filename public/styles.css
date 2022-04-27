@@ -202,10 +202,10 @@
   display: none;
 }
 .select-files {
-  /* display: none; */
+  display: none;
 }
 .select-media {
-  display: none;
+  /* display: none; */
 }
 .photo-files:hover {
   cursor: pointer;
